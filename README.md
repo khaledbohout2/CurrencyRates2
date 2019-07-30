@@ -7,5 +7,4 @@ know real time currency rates using currency rates api
 * make Networking calls.
 * Use public web-based APIs to fetch data.
 * parse data organised in JSON format.
-* use Core Location and utilising the iPhone’s inbuilt GPS. 
 
