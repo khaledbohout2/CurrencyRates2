@@ -14,10 +14,10 @@ class CurrencyCell: UITableViewCell {
     @IBOutlet weak var currencyNamelbl: UILabel!
     @IBOutlet weak var currencyValuelbl: UILabel!
     
-    func configurecell(currency:Currency){
+    func configurecell(currency:CurrencyViweModel){
         
-        self.currencyNamelbl.text = currency.currencykey
-        self.currencyValuelbl.text = "\(currency.currencyValue)"
+        self.currencyNamelbl.text = currency.cur
+        self.currencyValuelbl.text = "\(currency.val ?? 0.0)"
        // self.currencyImageview.image = UIImage(named: currency.currencykey)
       
     }

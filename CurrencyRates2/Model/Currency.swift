@@ -7,34 +7,22 @@
 //
 
 import Foundation
-import Alamofire
 
-class Currency{
+// MARK: - Currencies
+struct Currencies: Codable, CodableInit {
     
-    private var _currencyValue:Double!
-    private var _currencyKey:String!
+    let rates: [String: Double]?
+    let base, date: String?
     
-    
-    var currencyValue:Double{
+    init() {
         
-        if _currencyValue == nil{
-           _currencyValue = 0.0
-        }
-        return _currencyValue
+        self.rates = nil
+        self.base = nil
+        self.date = nil
     }
-    
-    var currencykey:String{
-        
-        if _currencyKey == nil{
-            _currencyKey = ""
-        }
-        return _currencyKey
-    }
-    
-    init(currencykey:String,currencyval:Double) {
-        
-        self._currencyKey = currencykey
-        self._currencyValue = currencyval
-    }
-    
-    }
+}
+
+
+
+
+
